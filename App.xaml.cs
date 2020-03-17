@@ -21,7 +21,7 @@ namespace ResizeToFitDemo
 	{
 		public App()
 		{
-			Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(Syncfusion.Licensing.DemoCommon.FindLicenseKey());
+			
 		} 
 	}
 }

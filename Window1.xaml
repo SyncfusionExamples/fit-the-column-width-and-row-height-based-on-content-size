@@ -3,39 +3,44 @@
                              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                              xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
                              Icon="App.ico"
-                             syncfusion:LayoutControl.SetMetroMode="True">
+                             >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
 
-    <syncfusion:LayoutControl HeaderDescriptionText="This sample illustrates row/column resize to fit option in GridControl."
-                              HeaderText="GridControl Resize To Fit"
-                              LayoutMode="Metro">
-
-        <syncfusion:LayoutControl.GridView>
+        <Grid Grid.Column="0">
             <ScrollViewer CanContentScroll="True"
                           HorizontalScrollBarVisibility="Auto"
                           VerticalScrollBarVisibility="Auto">
-                <syncfusion:GridControl x:Name="grid" syncfusion:LayoutControl.SetMetroMode="True" />
+                <syncfusion:GridControl x:Name="grid"  />
             </ScrollViewer>
-        </syncfusion:LayoutControl.GridView>
+        </Grid>
 
-        <syncfusion:LayoutControl.UserOptionsView>
-            <syncfusion:UserOptions HeaderText="Resize To Fit">
-                <StackPanel>
-                    <Button Margin="5"
+        <Grid Grid.Column="1">
+
+            <StackPanel>
+                <TextBlock Margin="5" Text="This sample illustrates row/column resize to fit option in GridControl."
+                              />
+                <Button Margin="5"
                             Click="Button_Click"
                             Content="AutoFit Rows-Row3toRow5" />
-                    <Button Margin="5"
+                <Button Margin="5"
                             Click="Button_Click_1"
                             Content="AutoFit Columns-Column6toColumn8" />
-                    <Button Margin="5"
+                <Button Margin="5"
                             Click="Button_Click_2"
                             Content="AutoFit Cells -Row1Column1-Row2Column2" />
-                    <Button Margin="5"
+                <Button Margin="5"
                             Click="Button_Click_3"
                             Content="AutoFit Grid" />
-                    <Button Margin="5" Click="Button_Click_4"
+                <Button Margin="5" Click="Button_Click_4"
                             Content="Auto Wrap text" />
-                </StackPanel>
-            </syncfusion:UserOptions>
-        </syncfusion:LayoutControl.UserOptionsView>
-    </syncfusion:LayoutControl>
+            </StackPanel>
+        </Grid>
+
+   
+    </Grid>
 </syncfusion:ChromelessWindow>
