@@ -1,4 +1,4 @@
-# Fit the column width and row height based on content size
+# Fit the Column Width and Row Height Based on Content Size
 
 This example demonstrates how to adjust the columns and rows based on content size in [WPF GridControl](https://help.syncfusion.com/wpf/gridcontrol/overview).
 
@@ -45,7 +45,7 @@ this.grid.Model.ResizeColumnsToFit(GridRangeInfo.Table(), GridResizeToFitOptions
 
 ### Autofit Cells based on Wrap Text
 
-To autofit the cell’s height based on the applied wrap text, need to use [ResizeRowsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeRowsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method.
+To autofit the cell's height based on the applied wrap text, need to use [ResizeRowsToFit](https://help.syncfusion.com/cr/wpf/Syncfusion.Windows.Controls.Grid.GridModel.html#Syncfusion_Windows_Controls_Grid_GridModel_ResizeRowsToFit_Syncfusion_Windows_Controls_Grid_GridRangeInfo_Syncfusion_Windows_Controls_Grid_GridResizeToFitOptions_) method.
 
 ``` csharp
 this.grid.Model[2, 2].TextWrapping = TextWrapping.Wrap;
